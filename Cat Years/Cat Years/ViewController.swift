@@ -10,10 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var catYears: UITextField!
+    
+    @IBOutlet weak var message: UILabel!
+    
+    @IBAction func buttonPressed(sender: AnyObject) {
+    
+    
+        var age = catYears.text.toInt()
+        
+        age = age! * 7
+    
+    
+    message.text="your car is surprisingly /(age) old!"
+    
+    
+    }
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+            }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
